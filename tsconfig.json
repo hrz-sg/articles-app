@@ -7,11 +7,12 @@
       "jsx": "react-jsx",
       "allowJs": true,
       "moduleResolution": "node",
-    //   "baseUrl": ".",
-      // esModuleInterop allows to weork with packs, that use common js as
-      // usual packs with the help of import (require() module.export) = common js
+      "baseUrl": ".",
+      "paths": {
+        "*": ["./src/*"]
+      },
       "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true,
+      "allowSyntheticDefaultImports": true
     },
     "ts-node": {
         "compilerOptions": {
